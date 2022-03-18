@@ -1,0 +1,20 @@
+{
+  "name": "mercurius-upload-demo",
+  "version": "1.0.0",
+  "author": "ErgoFriend <erg.friend@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "esr src/index.ts"
+  },
+  "dependencies": {
+    "fastify": "^3.27.4",
+    "mercurius": "^9.3.5",
+    "mercurius-upload": "^3.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.27",
+    "esbuild-runner": "^2.2.1",
+    "mercurius-codegen": "^3.3.1",
+    "prettier": "^2.6.0"
+  }
+}

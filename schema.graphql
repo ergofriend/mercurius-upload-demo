@@ -1,0 +1,11 @@
+scalar Upload
+
+type Query {
+  """ hello world """
+  hello: String!
+}
+
+type Mutation {
+  """ return image url """
+  uploadImage(image: Upload): String!
+}
