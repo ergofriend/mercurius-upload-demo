@@ -15,7 +15,7 @@ app.register(mercurius, {
   resolvers,
   path: "/graphql",
 });
-app.listen(3000);
+app.listen(3000, '0.0.0.0');
 
 codegenMercurius(app, {
   targetPath: "./src/generated.ts",

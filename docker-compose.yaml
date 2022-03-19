@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+ mercurius-app:
+    image: node:16-alpine
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: sh -c "yarn install && yarn dev"
+    ports:
+      - '3000:3000'
