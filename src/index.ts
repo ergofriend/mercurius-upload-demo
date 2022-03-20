@@ -20,7 +20,7 @@ type Mutation {
 const app = Fastify({
   logger: true,
 });
-app.register(mercuriusUpload, { maxFileSize: 100000, maxFiles: 10 });
+app.register(mercuriusUpload);
 app.register(mercurius, {
   schema,
   resolvers,
