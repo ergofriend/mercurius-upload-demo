@@ -14,7 +14,7 @@ export const writeFile = async ({
   key: string;
   file: ReadStream;
 }) => {
-  const path = join(__dirname, key);
+  const path = join(__dirname, "../uploads", key);
   await pipeline(file, createWriteStream(path));
   return path;
 };
