@@ -7,13 +7,7 @@ const  uploadImage =  async (_root, { image }) => {
   const { filename, createReadStream }: FileUpload = await image
   const rs = createReadStream();
   const path = await writeFile({ key: filename, file: rs });
-  let data = "";
-
-  for await (const chunk of rs) {
-    data += chunk;
-  }
-
-  return path + data;
+  return path;
 };
 
 export const resolvers: IResolvers = {
